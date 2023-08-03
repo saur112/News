@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+:root{
+    --main-bg:#1e272e;
+    --main-color:#0097e6;
+}
+ html{
+    font-size: 62.5%;
+ }
+ /* style for index.hmtl */
+
+
+ .main_menu{
+    background-color: var(--main-bg);
+
+ }
+ .navbar{
+    color:#fff;
+    background-color: var(--main-bg);
+    padding:0.6rem;
+ }
+ .navbar a{
+    color:#fff;
+    font-size: medium;
+ }
+ .navbar-toggler{
+    color:#fff;
+    border:1px solid white;
+ }
+#navbarSupportedContent > ul{
+    margin-left:1.5rem;
+}
+
+li{
+    font-size: medium;
+}
+
+.fa-solid{
+    transition: all linear;
+    animation: rot 2s linear infinite ;
+}
+
+@keyframes rot {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.main_header_left{
+    height:40rem;
+    line-height: 2.4rem;
+    display:flex;
+    text-transform: capitalize;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_right{
+    height:50rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_left p{
+    font-size:1.8rem;
+}
+.main_header_left h1{
+    font-size: 2.8rem;
+
+}
+.main_header_left a{
+    font-size: 1.6rem;
+    margin-top:10px
+}
+.main_header_left button{
+    border-radius: 9px;
+    padding:8px;
+    box-shadow: 10px 6px 9px #1e272e;
+}
+
+
+
+
+/* style for 404 */
+.container{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 10rem;
+   
+
+}
+.container > h1,h2{
+    text-align: center;
+}
+.anchor{
+    
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+.btn{
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 9px;
+    padding:8px;
+    box-shadow: 10px 6px 9px #1e272e;
+}
+
+
+/* footer style */
+
+.footer{
+    background-color: #3d474e;
+    width: 100%;
+    height: 4rem;
+    margin-top: auto;
+
+    
+   
+}
+.h1{
+    color: #fff;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.6rem;
+}
+
+
+/* weather block style */
